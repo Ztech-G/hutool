@@ -1469,6 +1469,12 @@ public class MapUtil {
 	 * A temporary workaround for Java 8 specific performance issue JDK-8161372 .<br>
 	 * This class should be removed once we drop Java 8 support.
 	 *
+	 * @param <K>      Key类型
+	 * @param <V>      Value类型
+	 * @param map 键列表
+	 * @param mappingFunction  {@link Map}
+	 * @param key 键列表
+	 * @return {@link AbstractMap.SimpleEntry} 或者 {@link AbstractMap.SimpleImmutableEntry}
 	 * @see <a href="https://bugs.openjdk.java.net/browse/JDK-8161372">https://bugs.openjdk.java.net/browse/JDK-8161372</a>
 	 */
 	public static <K, V> V computeIfAbsent(Map<K, V> map, K key, Function<? super K, ? extends V> mappingFunction) {
