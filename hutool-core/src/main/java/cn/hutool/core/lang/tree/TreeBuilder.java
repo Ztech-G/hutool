@@ -165,6 +165,7 @@ public class TreeBuilder<E> implements Builder<Tree<E>> {
 	 * 增加节点列表，增加的节点是不带子节点的
 	 *
 	 * @param list       Bean列表
+	  * @param rootId       Bean列表
 	 * @param <T>        Bean类型
 	 * @param nodeParser 节点转换器，用于定义一个Bean如何转换为Tree节点
 	 * @return this
