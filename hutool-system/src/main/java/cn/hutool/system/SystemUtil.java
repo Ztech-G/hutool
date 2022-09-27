@@ -222,7 +222,7 @@ public class SystemUtil extends SystemPropsUtil {
 	 * 获取Java虚拟机中的{@link MemoryPoolMXBean}列表<br>
 	 * The Java virtual machine can have one or more memory pools. It may add or remove memory pools during execution.
 	 *
-	 * @return a list of <tt>MemoryPoolMXBean</tt> objects.
+	 * @return a list of MemoryPoolMXBean objects.
 	 */
 	public static List<MemoryPoolMXBean> getMemoryPoolMXBeans() {
 		return ManagementFactory.getMemoryPoolMXBeans();
@@ -232,7 +232,7 @@ public class SystemUtil extends SystemPropsUtil {
 	 * 获取Java虚拟机中的{@link MemoryManagerMXBean}列表<br>
 	 * The Java virtual machine can have one or more memory managers. It may add or remove memory managers during execution.
 	 *
-	 * @return a list of <tt>MemoryManagerMXBean</tt> objects.
+	 * @return a list of MemoryManagerMXBean objects.
 	 */
 	public static List<MemoryManagerMXBean> getMemoryManagerMXBeans() {
 		return ManagementFactory.getMemoryManagerMXBeans();
